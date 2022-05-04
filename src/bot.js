@@ -1,7 +1,7 @@
 import * as Discord from 'discord.js';
 import { getTemperature } from './weather.js';
 
-let regExp = "";
+let regExp = /^[0-9]{5}/;
 
 const client = new Discord.Client(
     {
@@ -22,7 +22,7 @@ async function onMessage(message){
 }
 
 function zipCodeFunc(str){
- regExp = /^[0-9]{5}/;
+
   
         if (regExp.test(str))
           {
