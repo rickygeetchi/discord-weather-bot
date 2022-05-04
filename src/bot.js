@@ -1,7 +1,7 @@
 import * as Discord from 'discord.js';
 import { getTemperature } from './weather.js';
 
-let regExp = ""
+let regExp = "";
 
 const client = new Discord.Client(
     {
